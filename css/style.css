@@ -1,0 +1,231 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Netflix Sans';
+  box-sizing: border-box;
+  background-color: #fff; }
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 100;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 300;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 400;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 700;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 800;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 900;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff"); }
+
+.netflix-sans-font-loaded {
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; }
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+  font-family: NKufi,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; }
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+  font-family: GraphikTH,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; }
+
+.error-page {
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 10px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.18);
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: 0;
+  margin-top: 68px;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000; }
+
+.heading-primary {
+  font-size: 7rem;
+  letter-spacing: 1px;
+  color: #c70000; }
+
+.paragraph {
+  font-size: 3rem; }
+
+.sub-title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #031cac; }
+
+.card {
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff; }
+  .card__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .card__img {
+    background-position: center;
+    background-size: cover;
+    height: 90%;
+    width: 90%;
+    margin: 5px; }
+    .card__img--1 {
+      background-image: url("../../assets/photos/teste.jfif"); }
+    .card__img--2 {
+      background-image: url("../../assets/photos/iphone13.jfif"); }
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 3rem; }
+  .header__title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 17px;
+    color: #e50914;
+    text-transform: uppercase; }
+
+.app-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%; }
+
+.main-page {
+  height: 100%;
+  width: 100%; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+  .grid__item {
+    padding: 2rem;
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    transition: all 1s; }
+    .grid__item:first-child {
+      grid-row: 1;
+      grid-column: 1/3; }
+
+.price {
+  font-weight: 700;
+  color: #575757; }
+
+.description {
+  font-size: 2rem; }
+
+.product-description {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%; }
+  .product-description__name {
+    padding-left: 11px;
+    width: 70%; }
+  .product-description__details {
+    width: 30%;
+    height: 100%;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    border-left: solid 1px rgba(0, 0, 0, 0.137); }
+    .product-description__details .details-item-description {
+      color: #e50914;
+      font-weight: 700; }
+
+ul li {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15px; }
+
+.transition {
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all .5s; }
+  .transition--active {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.952); }
+
+.local-smart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #c70610;
+  height: 100%;
+  width: 100%;
+  font-size: 17rem;
+  font-weight: 700; }
+  .local-smart__subtitle {
+    color: #ececec;
+    font-size: 15rem; }
