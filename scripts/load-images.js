@@ -32,9 +32,11 @@ const runAdvertisement = () => {
     let maxItems = products.length
     const item = products[index];
 
+
     changeDescription(item);
     changeDetails(item);
     changeDetails2(item);
+    showSell(item.sell);
     changeImage(item);
 
     index += 1;
@@ -43,6 +45,22 @@ const runAdvertisement = () => {
 
         index = 0
     }
+}
+
+
+const showSell = (show) => {
+
+    let sellEl = document.querySelectorAll('.sell-item');
+
+
+    if (show) {
+        sellEl[0].style.visibility = 'visible';
+        sellEl[1].style.visibility = 'visible';
+    } else {
+        sellEl[0].style.visibility = 'hidden';
+        sellEl[1].style.visibility = 'hidden';
+    }
+
 }
 
 

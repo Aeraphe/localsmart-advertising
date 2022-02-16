@@ -7,6 +7,7 @@ const products = [
         name: 'iPhone 12',
         state: '(Usado)',
         price: 'R$15.00,00',
+        sell: true,
         imagFolder: defaultPath,
         images: {
             1: { path: 'teste.jfif' },
@@ -29,6 +30,7 @@ const products = [
         name: 'iPhone 11',
         state: '(Novo)',
         price: 'R$11.00,00',
+        sell: false,
         imagFolder: defaultPath,
         images: {
             1: { path: 'iphone13.jfif' },
