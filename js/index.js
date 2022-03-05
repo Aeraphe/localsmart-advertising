@@ -24,7 +24,7 @@ const start = async () => {
             transition('hidden');
         }, 2500);
 
-    }, 20000);
+    }, 60000);
 
 
 }
@@ -42,7 +42,7 @@ const runAdvertisement = (products) => {
     changeDescription(item);
     // changeDetails(item);
     // changeDetails2(item);
-    // showSell(item.sell);
+     showSell(item.sold);
      changeImage(item);
 
     index += 1;
@@ -61,10 +61,10 @@ const showSell = (show) => {
 
     if (show) {
         sellEl[0].style.visibility = 'visible';
-        sellEl[1].style.visibility = 'visible';
+
     } else {
         sellEl[0].style.visibility = 'hidden';
-        sellEl[1].style.visibility = 'hidden';
+     
     }
 
 }
@@ -88,11 +88,13 @@ const changeDescription = (item) => {
     subTilte.className = "sub-title";
 
     //Title
-    subTilte.innerText = item.state;
+    subTilte.innerText = item.condition?"Novo":"Usado";
     producrTile.innerText = item.name;
     producrTile.appendChild(subTilte);
     //Price
-    price.innerText = item.price
+    let priceFormated  = parseFloat(item.price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+    price.innerText =  priceFormated;
 }
 
 
