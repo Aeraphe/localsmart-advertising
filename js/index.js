@@ -7,14 +7,23 @@ import { getProducts } from "./product.service.js";
 const start = async () => {
 
     let products = await getProducts()
-    console.log(products);
+   
+
+
+    setInterval(async () => {
+        //Get new products
+        products = await getProducts()
+        console.log("Get New Products");
+    }, 150000);
+
+
     runAdvertisement(products);
 
 
 
     setInterval(() => {
 
-       runAdvertisement(products);
+        runAdvertisement(products);
     }, 15000);
 
 
@@ -42,8 +51,8 @@ const runAdvertisement = (products) => {
     changeDescription(item);
     // changeDetails(item);
     // changeDetails2(item);
-     showSell(item.sold);
-     changeImage(item);
+    showSell(item.sold);
+    changeImage(item);
 
     index += 1;
 
@@ -64,7 +73,7 @@ const showSell = (show) => {
 
     } else {
         sellEl[0].style.visibility = 'hidden';
-     
+
     }
 
 }
@@ -88,13 +97,13 @@ const changeDescription = (item) => {
     subTilte.className = "sub-title";
 
     //Title
-    subTilte.innerText = item.condition?"Novo":"Usado";
+    subTilte.innerText = item.condition ? "Novo" : "Usado";
     producrTile.innerText = item.name;
     producrTile.appendChild(subTilte);
     //Price
-    let priceFormated  = parseFloat(item.price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    let priceFormated = parseFloat(item.price).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 
-    price.innerText =  priceFormated;
+    price.innerText = priceFormated;
 }
 
 

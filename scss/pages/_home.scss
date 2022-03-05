@@ -46,7 +46,8 @@
 
     &:first-child {
       grid-row: 1;
-      transform: rotate(-90deg);
+      transform: rotate(-90deg) translateY(-10rem);
+ 
     }
 
     &:last-child {
@@ -56,6 +57,7 @@
 }
 
 .price {
+  font-size: 4rem;
   font-weight: 700;
   color: rgb(0, 207, 35);
 }

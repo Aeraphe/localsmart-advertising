@@ -86,7 +86,7 @@ html {
   z-index: 1000; }
 
 .heading-primary {
-  font-size: 7rem;
+  font-size: 8rem;
   letter-spacing: 1px;
   color: #e0e0e0;
   line-height: 11rem; }
@@ -96,9 +96,9 @@ html {
 
 .sub-title {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  color: #031cac; }
+  color: #0f30e9; }
 
 .card {
   height: 100%;
@@ -163,11 +163,12 @@ html {
     transition: all 1s; }
     .grid__item:first-child {
       grid-row: 1;
-      transform: rotate(-90deg); }
+      transform: rotate(-90deg) translateY(-10rem); }
     .grid__item:last-child {
       transform: rotate(-90deg); }
 
 .price {
+  font-size: 4rem;
   font-weight: 700;
   color: #00cf23; }
 
