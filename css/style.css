@@ -86,7 +86,7 @@ html {
   z-index: 1000; }
 
 .heading-primary {
-  font-size: 8rem;
+  font-size: 7.5vh;
   letter-spacing: 1px;
   color: #e0e0e0;
   line-height: 11rem; }
