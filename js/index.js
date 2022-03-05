@@ -14,7 +14,7 @@ const start = async () => {
         //Get new products
         products = await getProducts()
         console.log("Get New Products");
-    }, 150000);
+    }, 240000);
 
 
     runAdvertisement(products);
