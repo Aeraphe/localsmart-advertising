@@ -1,15 +1,20 @@
+import { getProducts } from "./product.service.js";
 
-let index = 0;
 
-const start = () => {
 
-    runAdvertisement();
+
+
+const start = async () => {
+
+    let products = await getProducts()
+    console.log(products);
+    runAdvertisement(products);
 
 
 
     setInterval(() => {
 
-        runAdvertisement();
+       runAdvertisement(products);
     }, 5000);
 
 
@@ -24,9 +29,10 @@ const start = () => {
 
 }
 
+let index = 0;
 
+const runAdvertisement = (products) => {
 
-const runAdvertisement = () => {
 
 
     let maxItems = products.length
@@ -34,10 +40,10 @@ const runAdvertisement = () => {
 
 
     changeDescription(item);
-    changeDetails(item);
-    changeDetails2(item);
-    showSell(item.sell);
-    changeImage(item);
+    // changeDetails(item);
+    // changeDetails2(item);
+    // showSell(item.sell);
+     changeImage(item);
 
     index += 1;
 
@@ -92,13 +98,8 @@ const changeDescription = (item) => {
 
 const changeImage = (item) => {
     let image1 = document.querySelector('.card__img--1');
-    let image2 = document.querySelector('.card__img--2');
-
-    let img1Path = item.imagFolder + item.images['1'].path;
-    let img2Path = item.imagFolder + item.images['2'].path;
-
+    let img1Path = item.url;
     image1.style.backgroundImage = `url('${img1Path}')`;
-    image2.style.backgroundImage = `url('${img2Path}')`;
 }
 
 

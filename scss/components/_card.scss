@@ -11,18 +11,20 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0;
   }
 
   &__img {
     background-position: center;
     background-size: cover;
     border-radius: 5px;
-    height: 98%;
-    width: 98%;
+    height: 100%;
+    width: auto;
     margin: 5px;
 
+
     &--1 {
+   
       background-image: url("../../assets/photos/teste.jfif");
     }
 

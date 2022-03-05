@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "firebase": "^9.6.8"
   },
   "devDependencies": {
-
     "node-sass": "^7.0.1"
   }
 }

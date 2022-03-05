@@ -1,6 +1,6 @@
 
 const defaultPath = "../../assets/photos/";
-const products = [
+export const products = [
 
     {
 
