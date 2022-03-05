@@ -88,7 +88,7 @@ html {
 .heading-primary {
   font-size: 7rem;
   letter-spacing: 1px;
-  color: #c70000; }
+  color: #e0e0e0; }
 
 .paragraph {
   font-size: 3rem; }
@@ -104,7 +104,7 @@ html {
   border-radius: 5px;
   height: 100%;
   width: 100%;
-  background-color: #fff; }
+  background-color: #000000; }
   .card__body {
     display: flex;
     justify-content: center;
@@ -153,7 +153,7 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr  1fr;
+  grid-template-columns: 2.5fr  1fr;
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
@@ -161,13 +161,11 @@ html {
   width: 100%; }
   .grid__item {
     padding: 0.5rem 3rem;
-    justify-self: center;
     height: 100%;
     width: 100%;
     transition: all 1s; }
     .grid__item:first-child {
-      grid-row: 1;
-      padding-top: 2rem; }
+      grid-row: 1; }
     .grid__item:last-child {
       padding-bottom: 2rem; }
 
@@ -175,18 +173,19 @@ html {
   font-weight: 700;
   color: #575757; }
 
-.description {
-  font-size: 2rem; }
-
 .product-description {
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .product-description__name {
     padding-left: 11px;
-    width: 70%; }
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .product-description__details {
     width: 30%;
     height: 100%;

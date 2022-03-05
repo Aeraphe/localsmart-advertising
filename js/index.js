@@ -15,7 +15,7 @@ const start = async () => {
     setInterval(() => {
 
        runAdvertisement(products);
-    }, 5000);
+    }, 15000);
 
 
     setInterval(() => {
